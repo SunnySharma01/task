@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .content img {
+            width: 100px;
+            height: 300px;
+        }
+        .text-box {
+            height: 400px;
+            width: 350px;
+            padding: 50px;
+            background-color: #5bc0de;
+            color: #fff;
+            box-sizing: border-box;
+            word-wrap: break-word;
+        }
+        .text-box h2 {
+            margin-top: 80px;
+        }
+        .text-box p {
+            margin: 20px 0;
+        }
+        .read-more {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f0ad4e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .arrows {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .arrow-left {
+            left: 10px;
+        }
+        .arrow-right {
+            right: 10px;
+        }
+        @media (min-width: 768px) {
+            .content {
+                flex-direction: row;
+                align-items: center;
+            }
+            .content img {
+                width: 50%;
+            }
+            .text-box {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section-title">Section Title</div>
+        <div class="content">
+            <img src="images.jpg" alt="Meeting">
+            <div class="text-box">
+                <h2>Your paragraph text</h2>
+                <p>Add a little bit of body text Add a little bit of body text Add a little bit of body text Add a little bit of body text Add a little bit of body text Add a little bit of body text</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="arrows arrow-left">⬅️</div>
+        <div class="arrows arrow-right">➡️</div>
+    </div>
+</body>
+</html>
